@@ -1,0 +1,142 @@
+@import url(https://db.onlinewebfonts.com/c/ed147ffc0c22f110b20a665b27adfc1b?family=GT+Sectra+Display+Regular);
+
+@font-face {
+  font-family: "GT Sectra Display Regular";
+  src: url("https://db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.eot");
+  src: url("https://db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ed147ffc0c22f110b20a665b27adfc1b.svg#GT Sectra Display Regular")format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  background-color: black;
+  font-family: "GT Sectra Display Regular";
+}
+
+main {
+  position: relative;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid white;
+  z-index: 2;
+  position: relative;
+}
+
+#section-1 {
+
+  position: relative;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 2rem 2.5rem;
+  }
+
+  svg {
+    min-width: 2rem;
+    height: 50px;
+    width: 100px;
+  }
+
+  .nav-eleme:nth-child(2) {
+    i {
+      color: rgb(236, 71, 11);
+      padding-right: 1rem;
+      font-weight: bolder;
+    }
+  }
+
+  .middle {
+    display: flex;
+
+    .left,
+    .right {
+      width: 50%;
+    }
+
+    .left {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding-block: 5rem;
+    }
+
+    h1 {
+      color: white;
+      font-size: 7rem;
+      line-height: 0.9;
+      text-align: right;
+      letter-spacing: -2px;
+    }
+  }
+
+  .bottom {
+    display: flex;
+
+    .left,
+    .right {
+      width: 50%;
+      color: white;
+    }
+
+    .right {
+      padding-left: 7rem;
+      font-family: sans-serif;
+
+      .slash {
+        margin: 0px 15px 0px 10px;
+      }
+
+      .p1 {
+        line-height: 2rem;
+        font-size: 1.5rem;
+      }
+
+      .p2 {
+        padding-top: 2rem;
+        color: gray;
+        line-height: 1.5rem;
+      }
+
+      .p3 {
+        padding-top: 4rem;
+        font-size: small;
+      }
+    }
+
+  }
+
+  .first-line {
+    position: absolute;
+    width: 40rem;
+    height: 1px;
+    background-color: rgba(219, 16, 16, 0.842);
+    transform: rotate(45deg) translate(0, -35rem);
+    left: -15rem;
+  }
+
+  .second-line {
+    position: absolute;
+    width: 15rem;
+    height: 1px;
+    background-color: rgba(219, 16, 16, 0.842);
+    transform: rotate(-45deg) translate(0, -55rem);
+    right: -20rem;
+  }
+}
