@@ -7,17 +7,26 @@ function App() {
   return (
     <>
       <main>
-        <Canvas style={{
-          height: "100vh",
-          width: "100vw",
-          position: "fixed",
-          top: 0,
-          left: 0,
-          zIndex: 1,
-          backgroundImage: "url(background-xl.png)",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover"
-        }}>
+        <div className="images">
+          <img id='tomorrowland' src="tomorrowland.png" alt="tomorrowland" />
+          <img id='NavyPier' src="NavyPier.png" alt="NavyPier" />
+          <img id='MSIChicago' src="MSIChicago.png" alt="MSIChicago" />
+          <img id="ThisWasLouisesPhone" src="ThisWasLouise'sPhone.png" alt="ThisWasLouise'sPhone" />
+          <img id='KIKKFestival2018' src="KIKKFestival2018.png" alt="KIKKFestival2018" />
+          <img id='TheKennedyCenter' src="TheKennedyCenter.png" alt="TheKennedyCenter" />
+          <img id='RoyalOperaOfWallonia' src="RoyalOperaOfWallonia.png" alt="RoyalOperaOfWallonia" />
+        </div>
+        <div id="canvas-bg"></div>
+        <Canvas
+          id='canvas-eleme'
+          style={{
+            height: "100vh",
+            width: "100vw",
+            position: "fixed",
+            top: 0,
+            left: 0,
+            zIndex: 1,
+          }}>
           <Dog />
         </Canvas>
         <section id='section-1'>
@@ -48,7 +57,7 @@ function App() {
           </nav>
           <div className='middle'>
             <div className='left'>
-              <h1>We <br /> Make <br /> Good <br /> Thing</h1>
+              <h1>We <br /> Make <br /> Good <br /> Things</h1>
             </div>
             <div className='right'></div>
           </div>
@@ -77,8 +86,70 @@ function App() {
           <div className="first-line"></div>
           <div className="second-line"></div>
         </section>
-        <section id='section-2'></section>
-        <section id='section-3'></section>
+        <section id='section-2'>
+          <div className="titles">
+            <div img-title="tomorrowland" className="title">
+              <small>2020 - ONGOING</small>
+              <h1>Tomorrowland</h1>
+            </div>
+            <div img-title="NavyPier" className="title">
+              <small>2018 - TODAY</small>
+              <h1>Navy Pier</h1>
+            </div>
+            <div img-title="MSIChicago" className="title">
+              <small>2015 - TODAY</small>
+              <h1>MSI Chicago</h1>
+            </div>
+            <div img-title="ThisWasLouisesPhone" className="title">
+              <small>2016</small>
+              <h1>This Was Louise's Phone</h1>
+            </div>
+            <div img-title="KIKKFestival2018" className="title">
+              <small>2012 - TODAY</small>
+              <h1>KIKK Festival 2018</h1>
+            </div>
+            <div img-title="TheKennedyCenter" className="title">
+              <small>2017</small>
+              <h1>The Kennedy Center</h1>
+            </div>
+            <div img-title="RoyalOperaOfWallonia" className="title">
+              <small>2016 - ONGOING</small>
+              <h1>Royal Opera Of Wallonia</h1>
+            </div>
+          </div>
+        </section>
+        <section id='section-3'>
+          <div className="top">
+            <div className="left">
+              <h3>
+                We're crafting <br />
+                emotional <br />
+                experienes aimed <br />
+                at improving <br />
+                results
+              </h3>
+            </div>
+            <div className="right"></div>
+          </div>
+        </section>
+        <section id="section-4">
+          <div className="bottom">
+            <div className="left">
+            </div>
+            <div className="right">
+              <div className='bottom-right-container'>
+                <p>
+                  Dogstudio is a design & technology firm working globally from our offices based in Belgium and Chicago.
+                  Our strong focus on producing high quality & emotional brandings, digital products and experiences became a signature.
+                </p>
+                <p>
+                  We’re passionate about moving people and solving problems for the likes of Microsoft, The Museum of Science And Industry Of Chicago, The Kennedy Center of Washington, Dragone, Quanta Magazine, and many more.
+                </p>
+              </div>
+              <p className='small-text'>Discover our values</p>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )
